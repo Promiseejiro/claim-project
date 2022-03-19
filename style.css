@@ -1,0 +1,121 @@
+:root {
+  --Pal-blue: hsl(225, 100%, 94%);
+  --Brigh-blue: hsl(245, 75%, 52%);
+  --Ver-pal-blue: hsl(225, 100%, 98%);
+  --Desaturate-blue: hsl(224, 23%, 55%);
+  --Dar-blue: hsl(223, 47%, 23%);
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  min-width: 375px;
+  height: 100vh;
+  background-color: var(--Pal-blue);
+  padding: 5em 1.5em 3em 1.5em;
+  font-family: var(--font-family);
+}
+
+.sub-container {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  background-color: #ffffff;
+  padding-bottom: 2em;
+  margin-top: -0.3em;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 1em 1em;
+  background-color: var(--Ver-pal-blue);
+  margin: auto;
+  border-radius: 10px;
+}
+main h1 {
+  color: var(--Dar-blue);
+  text-align: center;
+  padding-top: 1em;
+  font-weight: 800;
+}
+
+main > p {
+  color: var(--Desaturate-blue);
+  text-align: center;
+  padding: 1em 2em;
+  font-weight: 500;
+}
+
+main h4 {
+  color: var(--Dar-blue);
+  font-weight: 700;
+}
+
+main a {
+  color: var(--Brigh-blue);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.price {
+  color: var(--Desaturate-blue);
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+button {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 1em 0;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1em;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.proceed-btn {
+  background-color: var(--Brigh-blue);
+  color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.cancel-btn {
+  color: var(--Desaturate-blue);
+}
+
+@media (min-width: 720px) {
+  .main-container {
+    padding: 0 10em;
+  }
+  .sub-container {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1050px) {
+  .sub-container {
+    width: 40%;
+    margin: auto;
+  }
+}
