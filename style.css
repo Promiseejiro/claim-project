@@ -91,7 +91,7 @@ button {
   margin-top: 1em;
   cursor: pointer;
   font-weight: 800;
-  Outline :none;
+  outline :none;
 }
 
 .proceed-btn {
