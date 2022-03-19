@@ -102,7 +102,7 @@ button {
 
 .cancel-btn {
   color: var(--Desaturate-blue);
-background-color: transparent;
+background-color:#ffffff;
 }
 
 @media (min-width: 720px) {
